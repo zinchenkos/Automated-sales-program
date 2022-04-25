@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1440.0" style="-fx-background-color: #EBECF0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <children>
+      <BorderPane layoutX="759.0" layoutY="137.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="601.0" stylesheets="@../stylesheet.css" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="137.0">
+         <center>
+          <TableView fx:id="tableUsers" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="570.0" style="-fx-background-color: #EBECF0; -fx-background-radius: 15px;" styleClass="table" BorderPane.alignment="CENTER">
+            <columns>
+              <TableColumn fx:id="nameColumn" prefWidth="360.0" text="Name" />
+              <TableColumn fx:id="priceColumn" prefWidth="190.0" text="Price" />
+            </columns>
+               <effect>
+                  <DropShadow color="#c3cad9db" offsetX="6.0" offsetY="6.0">
+                     <input>
+                        <DropShadow color="WHITE" offsetX="-6.0" offsetY="-4.0" />
+                     </input>
+                  </DropShadow>
+               </effect>
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </BorderPane.margin>
+          </TableView>
+         </center>
+      </BorderPane>
+      <AnchorPane layoutX="79.0" layoutY="223.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="371.0" prefWidth="478.0" style="-fx-background-color: #EBECF0; -fx-background-radius: 8px;" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="223.0">
+         <effect>
+            <DropShadow color="#c3cbdbe2" offsetX="6.0" offsetY="6.0">
+               <input>
+                  <DropShadow color="WHITE" offsetX="-6.0" offsetY="-6.0" />
+               </input>
+            </DropShadow>
+         </effect>
+         <children>
+            <Button fx:id="printButton" layoutX="140.0" layoutY="292.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="198.0" style="-fx-background-color: #cc33ff; -fx-background-radius: 8em;" text="Pay " textFill="WHITE" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="292.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#d9c3d7eb" offsetX="6.0" offsetY="6.0">
+                     <input>
+                        <DropShadow color="WHITE" offsetX="-6.0" offsetY="-6.0" />
+                     </input>
+                  </DropShadow>
+               </effect>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Apply/black-and-white-credit-cards.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+          <Label layoutX="187.0" layoutY="41.0" prefHeight="30.0" prefWidth="103.0" text="Barcode" textFill="#575151">
+            <font>
+              <Font name="Verdana" size="24.0" />
+            </font>
+          </Label>
+            <AnchorPane layoutX="113.0" layoutY="195.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="69.0" prefWidth="255.0" style="-fx-background-color: #EBECF0; -fx-background-radius: 8px;" AnchorPane.leftAnchor="113.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="195.0">
+               <effect>
+                  <DropShadow color="#c3cbdbe2" offsetX="6.0" offsetY="6.0">
+                     <input>
+                        <DropShadow color="WHITE" offsetX="-6.0" offsetY="-6.0" />
+                     </input>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <Text fill="#404040" layoutX="52.0" layoutY="44.0" stroke="#eb0000" strokeType="OUTSIDE" strokeWidth="0.0" text="Sum" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="16.0">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="labPrice" layoutX="112.0" layoutY="16.0" text="00.00" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="16.0">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="11.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Apply/money.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="BarcodeText" layoutX="72.0" layoutY="119.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="334.0" promptText="Barcode" style="-fx-background-radius: 8px;" stylesheets="@../stylesheet_2.css" AnchorPane.leftAnchor="72.0" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="119.0">
+               <effect>
+                  <DropShadow color="#c3cad9db" offsetX="6.0" offsetY="6.0">
+                     <input>
+                        <DropShadow color="#ffffffe2" offsetX="-6.0" offsetY="-6.0">
+                           <input>
+                              <InnerShadow choke="1.0" color="#cd36ff00" height="5.0" radius="2.0" width="5.0">
+                                 <input>
+                                    <InnerShadow color="WHITE" offsetX="-6.0" offsetY="-6.0">
+                                       <input>
+                                          <InnerShadow color="#c3cbdbe3" offsetX="6.0" offsetY="6.0" />
+                                       </input>
+                                    </InnerShadow>
+                                 </input>
+                              </InnerShadow>
+                           </input>
+                        </DropShadow>
+                     </input>
+                  </DropShadow>
+               </effect>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+  </children>
+</AnchorPane>

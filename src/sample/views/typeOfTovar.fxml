@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="374.0" style="-fx-background-color: #EBECF0; -fx-background-radius: 8px;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TypeOfTovar">
+   <children>
+      <Text fill="#575151" layoutX="38.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose type of product" textAlignment="CENTER" wrappingWidth="297.13348388671875" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="38.86651611328125">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Button fx:id="techButton" layoutX="88.0" layoutY="214.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="198.0" style="-fx-background-color: #cc33ff; -fx-background-radius: 8em;" text="Tech" textFill="WHITE">
+         <effect>
+            <DropShadow color="#d9c3d7eb" offsetX="6.0" offsetY="6.0">
+               <input>
+                  <DropShadow color="WHITE" offsetX="-6.0" offsetY="-6.0" />
+               </input>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="foodButton" layoutX="88.0" layoutY="110.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="198.0" style="-fx-background-color: #cc33ff; -fx-background-radius: 8em;" text="Food" textFill="WHITE">
+         <effect>
+            <DropShadow color="#d9c3d7eb" offsetX="6.0" offsetY="6.0">
+               <input>
+                  <DropShadow color="WHITE" offsetX="-6.0" offsetY="-6.0" />
+               </input>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="clothesButton" layoutX="88.0" layoutY="161.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="198.0" style="-fx-background-color: #cc33ff; -fx-background-radius: 8em;" text="Clothes" textFill="WHITE">
+         <effect>
+            <DropShadow color="#d9c3d7eb" offsetX="6.0" offsetY="6.0">
+               <input>
+                  <DropShadow color="WHITE" offsetX="-6.0" offsetY="-6.0" />
+               </input>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="chemiclButton" layoutX="88.0" layoutY="265.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="198.0" style="-fx-background-color: #cc33ff; -fx-background-radius: 8em;" text="Chemical" textFill="WHITE">
+         <effect>
+            <DropShadow color="#d9c3d7eb" offsetX="6.0" offsetY="6.0">
+               <input>
+                  <DropShadow color="WHITE" offsetX="-6.0" offsetY="-6.0" />
+               </input>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

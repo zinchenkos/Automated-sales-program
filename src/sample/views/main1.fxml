@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1440.0" style="-fx-background-color: #1f2022;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller1">
+  <children>
+    <TableView fx:id="tableUsers" layoutX="585.0" layoutY="50.0" prefHeight="695.0" prefWidth="810.0" style="-fx-background-color: #7b7b7b;" AnchorPane.bottomAnchor="155.0" AnchorPane.leftAnchor="585.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="50.0">
+      <columns>
+        <TableColumn fx:id="idColumn" prefWidth="80.0" text="ID" />
+        <TableColumn fx:id="nameColumn" prefWidth="232.5023193359375" text="Name" />
+        <TableColumn fx:id="barcodeColumn" prefWidth="210.4976806640625" text="Barcode" />
+        <TableColumn fx:id="priceColumn" prefWidth="286.369140625" text="Price" />
+      </columns>
+    </TableView>
+    <Label layoutX="250.0" layoutY="214.0" prefHeight="30.0" prefWidth="189.0" text="Barcode" textFill="WHITE">
+      <font>
+        <Font name="Verdana" size="24.0" />
+      </font>
+    </Label>
+      <TextField fx:id="BarcodeText" layoutX="134.0" layoutY="288.0" prefHeight="39.0" prefWidth="327.0" style="-fx-background-color: #7b7b7b;" />
+      <Button layoutX="134.0" layoutY="388.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="327.0" style="-fx-background-color: #7b7b7b;" />
+      <Text fill="WHITE" layoutX="160.0" layoutY="432.0" stroke="#eb0000" strokeType="OUTSIDE" strokeWidth="0.0" text="Price: " wrappingWidth="114.7166748046875">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Label fx:id="labPrice" layoutX="347.0" layoutY="404.0" text="00.00" textFill="WHITE">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="printButton" layoutX="268.0" layoutY="491.0" mnemonicParsing="false" style="-fx-background-color: #7b7b7b;" text="Print" textFill="WHITE" />
+  </children>
+</AnchorPane>
